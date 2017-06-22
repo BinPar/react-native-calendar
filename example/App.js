@@ -5,7 +5,7 @@ import {
   View,
 } from 'react-native';
 
-import Calendar from 'react-native-calendar';
+import Calendar from './components/Calendar';
 import moment from 'moment';
 
 const customDayHeadings = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

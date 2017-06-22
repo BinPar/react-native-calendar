@@ -8,8 +8,7 @@
 	},
 	"dependencies": {
 		"react": "16.0.0-alpha.6",
-		"react-native": "0.44.0",
-		"react-native-calendar": "git+ssh://git@github.com/christopherdro/react-native-calendar"
+		"react-native": "0.44.0"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.1",
