@@ -299,11 +299,13 @@ export default class Calendar extends Component {
 
 			for (i; i < 7; ++i) {
 				const j = (i + this.props.weekStart) % 7;
+				let dayHeading = this.props.dayHeadings[j];
+				let isWeekend = j === 0 || j === 6;
 				let headingElement = this.props.renderHeaderTextElement ?
-					this.props.renderHeaderTextElement(j === 0 || j === 6, i) :
+					this.props.renderHeaderTextElement(dayHeading, isWeekend, j) :
 					(<Text
 						key={i}
-						style={j === 0 || j === 6 ?
+						style={isWeekend ?
 							[styles.weekendHeading, this.props.customStyle.weekendHeading] :
 							[styles.dayHeading, this.props.customStyle.dayHeading]}
 					>
