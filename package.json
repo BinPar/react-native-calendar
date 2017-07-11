@@ -1,11 +1,11 @@
 {
-  "name": "react-native-calendar",
+  "name": "@binpar/react-native-calendar",
   "version": "0.12.2",
   "description": "Simple Calendar Component for React Native",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:christopherdro/react-native-calendar.git"
+    "url": "git@github.com:binpar/react-native-calendar.git"
   },
   "scripts": {
     "eslint": "eslint ."

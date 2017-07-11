@@ -6,7 +6,7 @@ Portrait mode only
 
 ## Installation
 
-`npm install react-native-calendar --save`
+`npm install @binpar/react-native-calendar --save`
 
 ## Usage
 ```javascript
