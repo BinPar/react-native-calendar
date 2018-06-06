@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
 	Text,
 	TouchableOpacity,
@@ -14,10 +15,10 @@ export default class Day extends Component {
 	}
 
 	static propTypes = {
-		caption: PropTypes.any,
-		customStyle: PropTypes.object,
+		caption: PropTypes.string,
+		customStyle: PropTypes.shape({}),
 		filler: PropTypes.bool,
-		event: PropTypes.object,
+		event: PropTypes.PropTypes.shape({}),
 		isSelected: PropTypes.bool,
 		isToday: PropTypes.bool,
 		isWeekend: PropTypes.bool,

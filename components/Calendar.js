@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component } from 'react';
 import {
 	Dimensions,
 	ScrollView,
@@ -6,10 +6,10 @@ import {
 	TouchableOpacity,
 	View,
 } from 'react-native';
+import PropTypes from 'prop-types';
+import moment from 'moment';
 
 import Day from './Day';
-
-import moment from 'moment';
 import styles from './styles';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
@@ -32,13 +32,13 @@ export default class Calendar extends Component {
 
 	static propTypes = {
 		currentMonth: PropTypes.any,
-		customStyle: PropTypes.object,
+		customStyle: PropTypes.shape({}),
 		dayHeadings: PropTypes.array,
 		eventDates: PropTypes.array,
 		monthNames: PropTypes.array,
 		nextButtonText: PropTypes.oneOfType([
 			PropTypes.string,
-			PropTypes.object
+			PropTypes.shape({})
 		]),
 		onDateSelect: PropTypes.func,
 		onSwipeNext: PropTypes.func,
@@ -53,7 +53,7 @@ export default class Calendar extends Component {
 		renderDayText: PropTypes.func,
 		prevButtonText: PropTypes.oneOfType([
 			PropTypes.string,
-			PropTypes.object
+			PropTypes.shape({})
 		]),
 		removeClippedSubviews: PropTypes.bool,
 		scrollEnabled: PropTypes.bool,
